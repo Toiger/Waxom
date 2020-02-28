@@ -44,13 +44,14 @@
 
 .container{
      margin: 0;
-    padding: 0;
+       padding: 0;
+    
 }
 
 body{
    max-width: 1920px;
    padding: 0;
-   margin: 0;
+   margin: 0 auto;
 }
 
 .header{
@@ -324,6 +325,7 @@ color: #ffffff;
 border: 1px solid #998675;
 background-color: #998675;
 border-radius: 3px;
+cursor: pointer;
 margin: 0 auto;
 }
 
@@ -606,7 +608,9 @@ color: #8c8c8c;
 border: 1px solid #8c8c8c;
 background-color: #ffffff;
 border-radius: 3px;
+cursor: pointer;
 margin: 0 0 0 10px;
+    outline: none;
 }
 
 .our-latest-projects-button:first-child{
@@ -621,11 +625,13 @@ margin: 0 0 0 10px;
 .our-latest-projects-button:hover{
     background-color: #998675;
     color: #ffffff;
+    outline: none;
 }
 
 .our-latest-projects-button:active{
     color: black;
     background-color: #8c8c8c;
+    outline: none;
 }
 
 .container-article{
@@ -633,7 +639,7 @@ margin: 0 0 0 10px;
     flex-direction: row;
     justify-content:center;
     flex-wrap: wrap;
-    width: 70%;
+    width: 80%;
     margin: 0 0 40px 0;
 }
 
@@ -967,6 +973,7 @@ margin: 0 auto;
     position: relative;
     width: 370px;
     border: 1px solid #f8f8f8;
+    margin-left: 3%;
 }
 
 .resent-item-title {
@@ -1091,6 +1098,7 @@ margin: 5px;
     border-radius: 50%;
     position: relative;
     background-color: transparent;
+    cursor: pointer;
     margin: 0 8px 0 0;
 }
 .recent-button-left:after {
@@ -1111,6 +1119,7 @@ margin: 5px;
     border: 2px solid #d1d1d1;
     border-radius: 50%;
     position: relative;
+    cursor: pointer;
     background-color: transparent;
 }
 
@@ -1495,6 +1504,7 @@ padding-right: 12px;
 
 input[type="checkbox"]:checked ~ .menu-nav {
   visibility: visible;
+    height: auto;
 }
 
 .menu-nav-link:hover{
@@ -1548,11 +1558,10 @@ input[type="checkbox"]:checked ~ .menu-nav {
         justify-content: center;
     }
   .menu-nav {
-    display: block;
+    height: 0;
     visibility: hidden;
     margin: 15% 60% 0 0;
     width: 100%;
-    height: 100%;
     flex-direction: column;
     justify-content: center;
   }
@@ -1934,3 +1943,13 @@ input[type="checkbox"]:checked ~ .menu-nav {
         padding-right: 6px;
     }
 }
+
+
+
+.recent-item:first-child {
+    margin: 0;
+}
+
+
+
+
